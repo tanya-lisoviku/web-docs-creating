@@ -1,22 +1,23 @@
 # Step 5: Create MkDocs Configuration (mkdocs.yml)
 
-1. **Create the `mkdocs.yml` file**:
+**Create the `mkdocs.yml` file**:
+
    - In the root of the project, right-click the folder and choose "Create File".
    - In the window that appears, enter the filename `mkdocs.yml`.
 ![create yaml.png](image/Documentation%20Setup/Create%20MkDocs%20configuration%20%28mkdocs_yml%29/create%20yaml.png)
-   ➤ To create a Yaml file, just add the `.yml` extension to the file name.
+   
+➤ To create a Yaml file, just add the `.yml` extension to the file name.
+
    - Add the file to Git.
 ![add to git.png](image/Documentation%20Setup/Create%20MkDocs%20configuration%20%28mkdocs_yml%29/add%20to%20git.png)
    ➤ After this step, you will have a `mkdocs.yml` file in your project tree.
-# Step 6: Create Documentation in Markdown Format
 
 1. **Create a `docs` folder** for storing the source text files.
 2. **Create an `image` folder** for storing images.
 
    As a result, your project structure will be scalable and look like this:
-
-Web-docs/ # Parent directory 
 ```
+Web-docs/ # Parent directory
 ├── .venv/ # Virtual environment of the project 
 ├── docs/ # Documentation source files 
 ├── image/ # Documentation images 
@@ -26,6 +27,38 @@ Web-docs/ # Parent directory
 Next, within the `docs` folder, create your first Markdown file.
 ![First docs file.png](image/Documentation%20Setup/Create%20documentation%20in%20Markdown%20format/First%20docs%20file.png)
 ➤ To create a Markdown file, just add the `.md` extension to the filename and start adding content according to the rules described below.
+
+## Customize your config (mkdocs.yml)
+As a result of editing, your config may have the following structure.
+
+```yaml
+# The name of your site, displayed in the page header
+site_name: Web-docs using MkDocs
+
+# The URL of your site after deployment (essential for correct link functionality)
+site_url: https://MkDocs-web-docs.github.io/how-to-create-web-docs/
+
+# Specify an additional CSS file for custom styles
+extra_css:
+  - extra.css
+
+# Navigation (site page structure)
+nav:
+  - Creating a web manual using MkDocs: index.md    # The main page of the site
+  - Links: Links.md                                 # Link to the Links page
+  - Project Setup: Project Setup.md                 # Link to the Project Setup page
+  - Documentation Setup: Documentation Setup.md     # Link to the Documentation Setup page
+  - Deploy and Customize: Deploy and Customize MkDocs.md # Link to the Deploy and Customize page
+
+# Site theme and localization
+theme:
+  name: mkdocs       # The theme being used (in this case, the standard MkDocs theme)
+  locale: ru         # Localization (Russian language)
+
+
+# Step 6: Create Documentation in Markdown Format
+```
+> You need to include index.md in your navigation.
 
 ## Basics of writing text in Markdown
 
