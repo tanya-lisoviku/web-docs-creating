@@ -119,6 +119,7 @@ _Italics_
 ```markdown 
 [Link text](URL)
 ```
+
 6.	**Images**
 ```markdown 
 ![Image name](../image/1_structure_project.png)
@@ -155,6 +156,22 @@ Use the `>` symbol to create notes.
 ```markdown 
 > Note: Always test your code before deploying.
 ```
+#### More about numbering
+To ensure that mixed numbering is displayed correctly in MkDocs (or any Markdown document), it is important to use proper indentation and formatting. Here is an example of how to do it:
+> !Indentation must be a multiple of 4 spaces.
+
+1. First item
+    - Unnumbered item inside a sub-item
+        - Another unnumbered item
+
+2. Second item
+    - Unnumbered item in main list
+        - Nested unnumbered item
+            - Deeper nested unnumbered item
+
+> In **MkDocs**, as in **Markdown**, the correct display of nested numbering depends on the theme used and the way Markdown is interpreted. For standard Markdown, automatic support for "sub-items with nested numbers" (e.g. 2.1.1) may not be available, since Markdown does not support multi-part numbering by default.
+
+Later we will look at working with other, more flexible, themes.
 
 > In some cases, the numbering may be broken. To fix this, I use HTML to continue the numbering:
 
