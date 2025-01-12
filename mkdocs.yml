@@ -10,7 +10,7 @@ nav:
   - Project Setup: Project Setup.md
   - Documentation Setup: Documentation Setup.md
   - Deploy and Customize: Deploy and Customize MkDocs.md
-  - Convert md to docx: Convert md_to_docx.md
+  - Convert Markdown to docx: Convert Markdown to docx.md
 
 theme:
   name: mkdocs
