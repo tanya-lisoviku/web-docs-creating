@@ -5,14 +5,14 @@ Let's look at how to convert Markdown (.md) files to Word (.docx) using Pandoc.
 
 At first check if Pandoc is installed on your computer:
 
-   - Open a terminal and run the command: ```brew info pandoc```
+   - Open a [terminal](# "A program for executing commands in the text interface of the operating system") and run the command: ```brew info pandoc```
 
 If the response says ```not installed```, then Pandoc is not installed.
 
 ### Install Pandoc
-To install Pandoc, run the following command in the terminal: ```brew install pandoc```
+To install Pandoc, run the following command in the [terminal](# "A program for executing commands in the text interface of the operating system"): ```brew install pandoc```
 
-> **Pandoc** is written in **Haskell** and is installed via **brew**, not **pip**.   
+> **Pandoc** is written in **Haskell** and is installed via **[brew](# "A package manager for macOS and Linux that allows you to install and manage various command line tools")**, not **pip**.   
 > There is a **Python** wrapper called **pypandoc**, but it wraps **Pandoc**.
 
 ### Basics of working with Pandoc
@@ -58,7 +58,7 @@ In order to convert multiple Markdown files to a DOCX file in the specified orde
 
 ##### Creating a filelist.txt file
 
-Setting the order of Markdown documents is necessary, since PyCharm automatically sorts documents alphabetically. To do this, I create a document `filelist.txt`.
+Setting the order of Markdown documents is necessary, since [PyCharm](# "Integrated development environment (IDE) with support for Python, Markdown files, and documentation preview functions") automatically sorts documents alphabetically. To do this, I create a document `filelist.txt`.
 
 ![filelist_txt.png](image/From%20md%20to%20docx/filelist_txt.png)
 
@@ -66,7 +66,7 @@ Then I fill the document with paths in the order in which they should be written
 
 ![md files list.png](image/From%20md%20to%20docx/md%20files%20list.png)
 
-> I use relative paths and escape the paths in quotes.
+> I use [relative paths](# "References to files or folders relative to the current working directory, instead of specifying the full path") and escape the paths in quotes.
 
 ##### Running the command
 
@@ -74,10 +74,10 @@ Once the `filelist.txt` document is created, I use the following command: ```cat
 
 This will generate the `combined.docx` file.
 
-> If you get `No such file or directory` as a result of running the command, check which directory you are running the command from. Run 'pwd' and make sure you are running the document conversion from the same directory where the Markdown files and images are located.
+> If you get `No such file or directory` as a result of running the command, check which directory you are running the command from. Run '[pwd](# "A terminal command that shows the current working directory")' and make sure you are running the document conversion from the same directory where the Markdown files and images are located.
 > You are probably running the convert command from the top directory, so change to the correct directory (use `cd` command)
 
-My project structure is shown below:
+My [project structure](# "A hierarchical organization of files and folders in a project. For example, the docs/ folder contains Markdown documents") is shown below:
 
 ```how-to-create-web-docs/
 ├── .venv/ # Directory for storing the Python virtual environment
@@ -109,18 +109,18 @@ This command converts multiple Markdown files specified in filelist.txt into a s
     chapter3.md
     ```
         
-2. ```|``` (Pipe)
-The ```|``` character routes the output of the `cat` command as input to the next command (`xargs`).
+2. ```|``` ([pipe](# "(|): a symbol used to pass the output of one command as input to another command"))
+The ```|``` character routes the output of the [cat](# "a terminal command that prints the contents of a file to the terminal") command as input to the command [xargs](# "A command-line utility that allows you to pass input (such as a list of files) to another command as arguments").
 
 3. ```xargs```
-The ```xargs``` command takes the strings passed through the pipe and substitutes them as arguments to the pandoc command. This allows each of the specified files to be processed.
+The ```xargs``` command takes the strings passed through the [pipe](# "(|): a symbol used to pass the output of one command as input to another command") and substitutes them as arguments to the pandoc command. This allows each of the specified files to be processed.
 
 4. pandoc ```--from=markdown+rebase_relative_paths-blank_before_blockquote -t docx -o combined.docx```
 This command uses ```pandoc``` to convert Markdown files into a single DOCX document. Let's look at pandoc's arguments:
 
     * ```--from=markdown+rebase_relative_paths-blank_before_blockquote```: The option specifies the format of the input files.
     * ```markdown``` is the Markdown format.
-    * ```+rebase_relative_paths``` makes pandoc update relative paths in files.
+    * ```+rebase_relative_paths``` makes pandoc update [relative paths](# "References to files or folders relative to the current working directory, instead of specifying the full path") in files.
     * ```-blank_before_blockquote``` disables adding blank lines before blockquotes.
     * ```-t docx```: The option specifies the target conversion format - DOCX (Microsoft Word).
     * ```-o combined.docx```: The option specifies the name of the output file (combined.docx).

@@ -12,10 +12,10 @@
 ![add to git.png](image/Documentation%20Setup/Create%20MkDocs%20configuration%20%28mkdocs_yml%29/add%20to%20git.png)
    ➤ After this step, you will have a `mkdocs.yml` file in your project tree.
 
-1. **Create a `docs` folder** for storing the source text files.
+1. **Create a [docs](# "A folder containing the source documentation files in Markdown format") folder** for storing the source text files.
 2. **Create an `image` folder** for storing images.
 
-   As a result, your project structure will be scalable and look like this:
+   As a result, your [project structure](# "A hierarchical organization of files and folders in a project. For example, the docs/ folder contains Markdown documents") will be scalable and look like this:
 ```
 Web-docs/ # Parent directory
 ├── .venv/ # Virtual environment of the project 
@@ -24,7 +24,7 @@ Web-docs/ # Parent directory
 ├── mkdocs.yml # MkDocs configuration file
 ```
 
-Next, within the `docs` folder, create your first Markdown file.
+Next, within the [docs](# "A folder containing the source documentation files in Markdown format") folder, create your first Markdown file.
 ![First docs file.png](image/Documentation%20Setup/Create%20documentation%20in%20Markdown%20format/First%20docs%20file.png)
 ➤ To create a Markdown file, just add the `.md` extension to the filename and start adding content according to the rules described below.
 
@@ -38,7 +38,7 @@ site_name: Web-docs using MkDocs
 # The URL of your site after deployment (essential for correct link functionality)
 site_url: https://MkDocs-web-docs.github.io/how-to-create-web-docs/
 
-# Specify an additional CSS file for custom styles
+# Specify an additional [CSS](# "Cascading Style Sheets: a style language for describing the appearance of HTML documents, including colors, fonts, indents, and other visual aspects") file for custom styles
 extra_css:
   - extra.css
 
@@ -124,9 +124,9 @@ _Italics_
 ```markdown 
 ![Image name](../image/1_structure_project.png)
 ```
-➤ To add an image, you don’t need to specify the path manually. Just drag the image from the left menu to the desired location, and PyCharm will automatically generate the path.
+➤ To add an image, you don’t need to specify the path manually. Just drag the image from the left menu to the desired location, and [PyCharm](# "Integrated development environment (IDE) with support for Python, Markdown files, and documentation preview functions") will automatically generate the path.
 ![drug-n-drop image.png](image/Documentation%20Setup/Create%20documentation%20in%20Markdown%20format/drug-n-drop%20image.png)
-➤ PyCharm has three document display modes, including a preview with images.
+➤ [PyCharm](# "Integrated development environment (IDE) with support for Python, Markdown files, and documentation preview functions") has three document display modes, including a preview with images.
 ![Preview .png](image/Documentation%20Setup/Create%20documentation%20in%20Markdown%20format/Preview%20.png)
 7.	**Code**
 * Inline code: Wrap the text in backticks (`).
@@ -190,7 +190,7 @@ Later we will look at working with other, more flexible, themes.
 ![Gitignore.png](image/Documentation%20Setup/Complete%20the%20structure%20of%20your%20project/Gitignore.png)
 ➤ The "site" folder will be automatically generated during deployment.
 
-Now, your project structure looks like this:
+Now, your [project structure](# "A hierarchical organization of files and folders in a project. For example, the docs/ folder contains Markdown documents") looks like this:
 ```
 Web-docs/  # Parent directory
 ├── .venv/  # Virtual environment

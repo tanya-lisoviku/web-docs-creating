@@ -27,20 +27,20 @@
 ![a new repository config.png](image/Project%20Setup/Create%20a%20new%20repository/a%20new%20repository%20config.png)
 **Clone the repository in PyCharm:**
 
-   - Copy the repository URL (either HTTPS or SSH).
-   - In PyCharm, select "Clone Repository" or "Get from VCS".
+   - Copy the repository URL (either HTTPS or [SSH](# "Secure Shell: a protocol for securely connecting to remote servers, often used to work with repositories. Requires SSH keys to be configured.")).
+   - In PyCharm, select "[Clone Repository](# "The process of copying a remote repository from GitHub to a local computer for working with it")" or "[Get from VCS](# "The process of copying a remote repository from GitHub to a local computer for working with it")".
    ![Get from VCS.png](image/Project%20Setup/Create%20a%20new%20repository/Get%20from%20VCS.png)
    - Copy the URL from your organization's page in GitHub (I choose SSH).
    ![SSH Url.png](image/Project%20Setup/Create%20a%20new%20repository/SSH%20Url.png)
    - Paste the URL and click "Clone".
 
-   ➤ If you choose SSH, make sure you have SSH settings configured. We'll discuss why this is more convenient in later posts.  
+   ➤ If you choose [SSH](# "Secure Shell: a protocol for securely connecting to remote servers, often used to work with repositories. Requires SSH keys to be configured."), make sure you have [SSH](# "Secure Shell: a protocol for securely connecting to remote servers, often used to work with repositories. Requires SSH keys to be configured.") settings configured. We'll discuss why this is more convenient in later posts.  
 
    - Click “Trust Project” in the window that opens.
 # Step 3: Setting up a virtual environment
 **Create a virtual environment:**
 
-   - Run the following command in the PyCharm terminal:
+   - Run the following command in the [PyCharm](# "Integrated development environment (IDE) with support for Python, Markdown files, and documentation preview functions") [terminal](# "A program for executing commands in the text interface of the operating system"):
    ![python -m venv venv.png](image/Project%20Setup/Setting%20up%20a%20virtual%20environment/python%20-m%20venv%20venv.png)
      ```
      python -m venv .venv
@@ -56,22 +56,22 @@
    python3.13 -m venv .venv
    ```
 
-➤ You can see the PyCharm version in the lower right corner of the screen.  
+➤ You can see the [PyCharm](# "Integrated development environment (IDE) with support for Python, Markdown files, and documentation preview functions") version in the lower right corner of the screen.  
 ➤ Setting up a virtual environment helps avoid conflicts between packages in different projects.  
 ➤ It's not possible to install two or more different versions of the same package in one environment. The solution is to create another environment.
 
 **Activate the environment:**
 
-   - In the PyCharm terminal, run:
+   - In the [PyCharm](# "Integrated development environment (IDE) with support for Python, Markdown files, and documentation preview functions") [terminal](# "A program for executing commands in the text interface of the operating system"), run:
      ```source .venv/bin/activate```
      
 # Step 4: Install MkDocs and the necessary packages
-**Install via pip:**
+**Install via [pip](# "A tool for installing and managing Python libraries and packages"):**
 
-   - Run the following in the terminal: ```pip install mkdocs mkdocs-material```
+   - Run the following in the [terminal](# "A program for executing commands in the text interface of the operating system"): ```pip install mkdocs mkdocs-material```
 
 ➤ If needed, specify the version with: ```pip3.13 install mkdocs mkdocs-material```
 
-   - Alternatively, use the "Packages" toolbar in PyCharm.
+   - Alternatively, use the "Packages" toolbar in [PyCharm](# "Integrated development environment (IDE) with support for Python, Markdown files, and documentation preview functions").
 
 

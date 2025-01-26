@@ -1,9 +1,6 @@
 site_name: Web-docs using MkDocs
 site_url: https://MkDocs-web-docs.github.io/how-to-create-web-docs/
 
-extra_css:
-  - extra.css
-
 nav:
   - Creating a web manual using MkDocs: index.md
   - Links: Links.md
@@ -11,7 +8,43 @@ nav:
   - Documentation Setup: Documentation Setup.md
   - Deploy and Customize: Deploy and Customize MkDocs.md
   - Convert Markdown to docx: Convert Markdown to docx.md
+  - Material theme for MkDocs: Material theme for MkDocs.md
+  - Glossary: Glossary.md
 
 theme:
-  name: mkdocs
-  locale: en
+  palette:
+    primary: pink
+    accent: lime
+  name: material
+  custom_dir: overrides
+  language: en
+  features:
+    - navigation.instant
+    - header.autohide
+    - content.tooltips
+  hide:
+    - footer
+
+plugins:
+  - exporter:
+      formats:
+        pdf:
+          enabled: true
+          aggregator:
+            enabled: true
+            output: documentation.pdf
+            covers: all
+      buttons:
+        - title: Save to PDF
+          icon: material-file-download-outline
+          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+          attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
+  - search
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+
+extra: {}
+

@@ -1,20 +1,20 @@
 # Step 8: Deploy Documentation to GitHub Pages
 
 #### **Build and preview the documentation** using the MkDocs built-in web server:  
-   - Run the following command in the terminal: ```mkdocs serve```
+   - Run the following command in the [terminal](# "A program for executing commands in the text interface of the operating system"): ```mkdocs serve```
    
    ![MkDocs serve command.png](image/Deploy%20and%20Customize%20MkDocs/Deploy%20documentation%20to%20GitHub%20Pages/MkDocs%20serve%20command.png)
    The site will be available locally for testing.
 ![MkDocs local link.png](image/Deploy%20and%20Customize%20MkDocs/Deploy%20documentation%20to%20GitHub%20Pages/MkDocs%20local%20link.png)
 ![Site local.png](image/Deploy%20and%20Customize%20MkDocs/Deploy%20documentation%20to%20GitHub%20Pages/Site%20local.png)
 
-➤ The site will automatically reload when you make changes in PyCharm.
+➤ The site will automatically reload when you make changes in [PyCharm](# "Integrated development environment (IDE) with support for Python, Markdown files, and documentation preview functions").
 
-➤ To stop the server, press Ctrl+C on your keyboard.
+➤ To stop the server, press [Ctrl+C](# "A keyboard shortcut used to stop a terminal process, such as a local MkDocs server") on your keyboard.
 
 #### **Deploy to GitHub Pages:**
 
-   - Run the ```mkdocs gh-deploy``` command in the terminal.
+   - Run the ```mkdocs gh-deploy``` command in the [terminal](# "A program for executing commands in the text interface of the operating system").
 ![MkDocs deploy link.png](image/Deploy%20and%20Customize%20MkDocs/Deploy%20documentation%20to%20GitHub%20Pages/MkDocs%20deploy%20link.png)
 
 ➤ This command creates a gh-pages branch, adds the compiled site to it, and pushes it to GitHub.
@@ -26,7 +26,7 @@ https://[username].github.io/[repository-name]
 
 1. **Create the `extra.css` file** in the `docs` folder.
 ![extra_css.png](image/Deploy%20and%20Customize%20MkDocs/Edit%20the%20appearance%20of%20our%20site/extra_css.png)
-2. **Register your custom CSS** in the `mkdocs.yml` configuration file.
+2. **Register your custom [CSS](# "Cascading Style Sheets: a style language for describing the appearance of HTML documents, including colors, fonts, indents, and other visual aspects")** in the `mkdocs.yml` configuration file.
 ![css in yaml config.png](image/Deploy%20and%20Customize%20MkDocs/Edit%20the%20appearance%20of%20our%20site/css%20in%20yaml%20config.png)
 3. **Add your custom styles** to the `extra.css` file.  
    For example, in my case:
@@ -56,7 +56,7 @@ footer {
 ![yaml_theme.png](image/Deploy%20and%20Customize%20MkDocs/Edit%20the%20appearance%20of%20our%20site/yaml_theme.png)
 4.	Write in our configuration (mkdocs.yml) the styling theme (in my case, it is “mkdocs”) and localization (for example, ru).
  
-➤	Localization is written to translate default elements, for example, pagination.
+➤	Localization is written to translate default elements, for example, [Pagination](# "Splitting content into pages with buttons for navigating between them. MkDocs supports and translates this when localizing").
 
 # Step 10: Committing Sources and Sending to the Git Repository
 
