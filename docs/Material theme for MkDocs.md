@@ -224,23 +224,25 @@ extra: {}
 Now our project structure looks this:
 
 how-to-create-web-docs/  
-├── docs/                          # Directory with Markdown documentation files  
-│   ├── Convert Markdown to docx.md  
-│   ├── Deploy and Customize MkDocs.md  
-│   ├── Documentation Setup.md  
-│   ├── extra.css                  # Custom styles (if applicable)  
-│   ├── filelist.txt               # Auxiliary file (e.g. file list)  
-│   ├── Glossary.md                
-│   ├── index.md                   
-│   ├── Links.md                   
-│   ├── Material theme for MkDocs.md  
-│   ├── Project Setup.md           
-├── image/                         # Image folder  
-├── overrides/                     # Template customization  
-│   ├── partials/                  # Template parts  
-│   │   ├── footer.html            # Custom footer  
-├── site/                          # Generated site (created automatically)  
-├── venv/                          # Python virtual environment  
-├── .gitignore                     # File to exclude from repository  
-├── mkdocs.yml                     # Main MkDocs configuration file  
-├── requirements.txt               # Project dependencies file  
+|--- docs/                          # Directory with Markdown documentation files  
+|   |--- image/                     # Image folder
+|   |--- Convert Markdown to docx.md  
+|   |--- Deploy and Customize MkDocs.md  
+|   |--- Documentation Setup.md  
+|   |--- extra.css                  # Custom styles (if applicable)  
+|   |--- filelist.txt               # Auxiliary file (e.g. file list)  
+|   |--- Glossary.md                
+|   |--- index.md                   
+|   |--- Links.md                   
+|   |--- Material theme for MkDocs.md  
+|   |--- Project Setup.md
+|--- overrides/                     # Template customization  
+|   |--- partials/                  # Template parts  
+|   |   |--- footer.html            # Custom footer  
+|--- site/                          # Generated site (created automatically)  
+|--- venv/                          # Python virtual environment  
+|--- .gitignore                     # File to exclude from repository  
+|--- mkdocs.yml                     # Main MkDocs configuration file  
+|--- requirements.txt               # Project dependencies file  
+
+Don't forget to regularly commit and push the sources so as not to lose anything✨
